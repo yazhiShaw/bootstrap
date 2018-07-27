@@ -1,0 +1,785 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <!--设置IE使用最新版本来渲染-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!--设置标题-->
+        <title>Bootstrap项目</title>
+        <!--描述，便于SEO-->
+        <meta name="description" content="">
+        <!--viewport制定移动端不对网页进行缩放-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" >
+		<!--html5的离线存储-->
+        <link rel="manifest" href="site.webmanifest">
+        <!--苹果浏览器可以使用添加到主屏按钮讲网页添加到主屏幕上，方便用户-->
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+		<!--确保所有浏览器都能使用html5元素-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--项目样式-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--导入bootstrap样式-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <!--文字动画-->
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+        <!--图标-->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    </head>
+
+    <style>
+    .navbar-default{
+        background-color: inherit;
+        border: none;
+    }
+
+    </style>
+
+    <body>
+    	<!--浏览器低版本的判断，当前浏览器不兼容，会跳转到最新版本浏览器让用户进行下载-->
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header class="navbar-fixed-top">
+        	<div class="container-fluid">
+
+        		<div class="row ">
+
+        			<div class="col-md-12 " style="padding: 0;">
+        				<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header clearfix">
+
+                                <div class="logo pull-left">
+                                    <a href="https://www.imooc.com/">
+                                        <img src="img/bdc.png" class="img-responsive" alt="" />
+                                    </a>
+                                </div>
+                                <div class="site-name pull-left">
+                                    <a href="https://www.imooc.com/">慕课网</a>
+                                    <div class="site-slogan ">
+                                        做最用心的教育机构
+                                        <a href="https://www.imooc.com/">imooc</a>
+                                    </div>
+                                </div>
+
+
+
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+
+						    </div>
+
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="mynavbar">
+
+						      <ul class="nav navbar-nav navbar-right">
+						        <li class="active"><a href="#index">首页</a></li>
+						        <li><a href="#about">关于</a></li>
+						        <li><a href="#service">服务</a></li>
+						        <li><a href="#portfolio">图集</a></li>
+						        <li><a href="#authentication">认证</a></li>
+						        <li><a href="#contact">联系我们</a></li>
+
+						      </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+        			</div>
+        		</div>
+
+        	</div>
+        </header>
+        <!--<div class="test"></div>-->
+        <section id="index" class="index">
+        	<div class="caption">
+	        	<div class="container">
+	        		<div class="row">
+	        			<div class="col-md-2"></div>
+	        			<div class="col-md-8 infotext">
+	        				<!--<h3 class="text-center animated rotateIn">慕课网站点</h3>-->
+	        				<h2 class="text-center animated fadeInDown">慕课网站点</h2>
+	        				<div class="space"></div>
+	        				<p class="text-left animated fadeInUp">慕课网是垂直的互联网IT技能免费学习网站。
+	        					以独家视频教程、在线编程工具、学习计划、问答社区为核心特色。在这里，
+	        					你可以找到最好的互联网技术牛人，
+	        					也可以通过免费的在线公开视频课程学习国内领先的互联网IT技术。
+	        					</p>
+	        			</div>
+	        			<div class="col-md-2"></div>
+	        		</div>
+	        	</div>
+        	</div>
+        </section>
+        <section id="about" class="about animated fadeIn">
+        	<div class="container">
+        		<h1 class="text-center">关于 慕课</h1>
+        		<p class="text-center">慕课网(IMOOC)是IT技能学习平台。</p>
+        		<div class="space"></div>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<img class="img-responsive" src="img/computer.jpg"/>
+        			</div>
+        			<div class="col-md-6">
+        				<p>慕课网是垂直的互联网IT技能免费学习网站。
+        				以独家视频教程、在线编程工具、学习计划、问答社区为核心特色。
+        				在这里，你可以找到最好的互联网技术牛人，
+        				也可以通过免费的在线公开视频课程学习国内领先的互联网IT技术。</p>
+
+						<p>慕课网课程涵盖前端开发、PHP、Html5、Android、iOS、Swift等IT前沿技术语言，
+						包括基础课程、实用案例、高级分享三大类型，适合不同阶段的学习人群。
+						以纯干货、短视频的形式为平台特点，为在校学生、职场白领提供了一个迅速提升技能、
+						共同分享进步的学习平台</p>
+						<ul class="list-unstyled">
+							<li><i class="fa fa-cog fa-spin"></i> 0基础小白晋升初级前端工程师</li>
+							<li><i class="fa fa-cog fa-spin"></i> 有布局基础技能提升秘籍</li>
+							<li><i class="fa fa-cog fa-spin"></i> JavaScript专项突破</li>
+							<li><i class="fa fa-cog fa-spin"></i> 超实用的Web前端主流框架</li>
+							<li><i class="fa fa-cog fa-spin"></i> Python3入门机器学习</li>
+						</ul>
+        			</div>
+        		</div>
+        		<h2>慕课简介</h2>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<p>慕课网是垂直的互联网IT技能免费学习网站。
+        				以独家视频教程、在线编程工具、学习计划、问答社区为核心特色。
+        				在这里，你可以找到最好的互联网技术牛人，
+        				也可以通过免费的在线公开视频课程学习国内领先的互联网IT技术。</p>
+
+						<p>慕课网课程涵盖前端开发、PHP、Html5、Android、iOS、Swift等IT前沿技术语言，
+						包括基础课程、实用案例、高级分享三大类型，适合不同阶段的学习人群。
+						以纯干货、短视频的形式为平台特点，为在校学生、职场白领提供了一个迅速提升技能、
+						共同分享进步的学习平台</p>
+
+						<p>4月2日，国内首个IT技能学习类应用——慕课网3.1.0版本在应用宝首发。
+							据了解，在此次上线的版本中，慕课网新增了课程历史记录、相关课程推荐等四大功能，
+							为用户营造更加丰富的移动端IT学习体验。</p>
+        			</div>
+        			<div class="col-md-6">
+        				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          编程入门先学什么?小白想入门看这里
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+						      	<ul>
+						      		<li>适合人群：小白入门用户，不需要任何编程基础</li>
+						      		<li>本路径将带你系统学习前端四大基础html、css、js、jQuery</li>
+						      		<li>包含400多道练习题等辅助资料，你将有能力独立开发项目，就业不成问题</li>
+						      	</ul>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          微信小程序开发，再不学就又错过了！
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+						      	<ul>
+						      		<li>课程一直紧跟微信官方不断更新，持续升级课程内容<br /></li>
+						      		<li>上手就是实战，通过真实案例，让你轻松学会小程序开发<br /></li>
+						      		<li>课程不仅仅讲解小程序开发，更会通过实际的编码来传递一些编程的经典思想。<br /></li>
+						      	</ul>
+		     				  </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingThree">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          超实用的Web主流前端框架
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						      <div class="panel-body">
+						      	<ul>
+							      	<li>采用组件化、模块化的开发方式，让你用更少的代码做更快速的开发<br /></li>
+									<li>通过提取外卖App最核心的商家模块，让你更能领略Vue.js组件化的魅力<br /></li>
+									<li>能直接上线的高质量代码，切实感受到什么是扩展性、通用性强的优质代码<br /></li>
+						      	</ul>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section id="service" class="service animated fadeIn">
+        	<div class="container">
+        		<h1 class="text-center">慕课服务</h1>
+        		<div class="space"></div>
+        		<div class="row">
+        			<div class="col-md-6">
+        				<div class="media">
+						  <div class="media-body">
+						    <h4 class="media-heading text-right">实战派老师</h4>
+						   	<p class="text-justify text-right ">老师来自于各大IT公司重要技术岗位，拥有丰富的实战经验。
+						   		语言平实、通俗易懂，更接地气，传授最有价值的经验之谈。
+						   	课程内容注重实用性，不仅让学员通过学习能够做出产品，而且学习过程中掌握的方法技巧在实际工作中用得上，
+						   	能够切实帮助学员提升工作技能。</p>
+						  </div>
+						  <div class="media-right">
+						    <a href="#">
+						      <i class="fa fa-area-chart fa-2x"></i>
+						    </a>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-body">
+						    <h4 class="media-heading text-right">方便的代码交流</h4>
+						   	<p class="text-justify text-right ">
+						   		学员在慕课网所提交的代码都会展现在“同学代码”模块，
+						   		学员不仅可以自己写代码实践，更可以观摩同学的代码，
+						   		学习不同的编写思路，触类旁通。在线编程现已支持Java、php、html、html5、JS、CSS六种编程语言的在线编程。
+						   		同时对其他语言的支持还在继续扩展中。</p>
+						  </div>
+						  <div class="media-right">
+						    <a href="#">
+						      <i class="fa fa-cog fa-2x"></i>
+						    </a>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-body">
+						    <h4 class="media-heading text-right">循序渐进的学习计划</h4>
+						   	<p class="text-justify text-right ">
+						   		每一个学习计划都是针对某一职位、某个方向来设定，
+						   		能够帮助初学者或入门者明确学习路径，从易到难、从理论到实战、
+						   		从核心到周边，循序渐进地达成学习目标。慕课网学习计划将各种课程内容进行有机整合，来帮助学员获得统合性学习、
+						   		帮助学员掌握胜任该职位的知识点和编程技能。</p>
+						  </div>
+						  <div class="media-right">
+						    <a href="#">
+						      <i class="fa fa-line-chart fa-2x"></i>
+						    </a>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-body">
+						    <h4 class="media-heading text-right">互帮互助的问答社区</h4>
+						   	<p class="text-justify text-right ">
+						   		在问答社区，学员可通过提问、答题、分享、讨论来与学友们一起交流，
+						   		共同进步。互相讨论技术难点，分享技术经验，成长更迅速。
+						   	在问答社区，老师们也常常活跃期间，对学员们提出的问题给予答复。
+						   	同时，老师们也会将自己的资源、心得分享在问答社区，让学员们掌握更多知识点。</p>
+						  </div>
+						  <div class="media-right">
+						    <a href="#">
+						      <i class="fa fa-asterisk fa-2x"></i>
+						    </a>
+						  </div>
+						</div>
+        			</div>
+        			<div class="col-md-6">
+        				<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <i class="fa fa-commenting fa-2x"></i>
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading text-left">实时交互的在线编程</h4>
+						    <p class="text-left text-justify">无需配置各种纷繁复杂的编程环境，打开网页直接就可以进行编程。
+						    	降低初学者学习编程中的起步难问题，
+						    	让学员更容易参与其中，迅速开始学习。
+								慕课网的在线编程采用了业界主流的ACE编辑器，
+								经过专业人士和程序员同行们的认可，
+								能够切实地给学员带来良好的编程体验。</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <i class="fa fa-bug fa-2x"></i>
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading text-left">良好的学习界面</h4>
+						    <p class="text-left text-justify">
+						    	无需配置各种纷繁复杂的编程环境，打开网页直接就可以进行编程。
+						    	在线编程界面采用三分屏设计，包括讲课内容区、
+						    	代码编写区、效果预览区。三大区域合理搭配，
+						    	能够让学员高效完成学习内容、编写代码、查看效果这一学习流程。
+						    	另外慕课网还采用在线编程采用所见即所得模式。</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <i class="fa fa-mobile fa-2x"></i>
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading text-left">慕课网App</h4>
+						    <p class="text-left text-justify">为了给广大IT学习者营造便捷的学习环境，慕课网同时开发了“手机慕课”，
+						    	即慕课网App。它是超酷的、免费的IT教育类应用，
+						    	以IT教学视频课程为主，拥有 iOS、Android两大版本。短视频纯干货、在线、离线随身学习、达人学霸互帮互助等强大功能。</p>
+						  </div>
+						</div>
+						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <i class="fa fa-intersex fa-2x"></i>
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading text-left">趣味教育</h4>
+						    <p class="text-left text-justify">
+						    	慕课网提供的教程中融入动画特效、流行词句，
+						    	趣味性的内容和授课方式易于引起用户的学习兴趣，摆脱学习的枯燥感。
+								慕课网视频短视频课程以短视频为特色，多数视频每节课不超过10分钟，
+							          有利于用户利用碎片化时间学习，同时也更容易聚焦用户注意力，使学习效果最大化。</p>
+						  </div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section id="together" class="together">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-2"></div>
+        			<div class="col-sm-8">
+        				<h1 class="text-center">Let's Study Together!</h1>
+        			</div>
+        			<div class="col-sm-2"></div>
+        		</div>
+        	</div>
+        </section>
+
+        <section id="portfolio" class="">
+        	<div class="container">
+        		<div class="space"></div>
+        		<div class="space"></div>
+        		<h1 class="text-center">学习一角</h1>
+        		<div class="space"></div>
+        		<p class="text-center">中心一角 我们的基地非常美丽 不过我最喜欢基地里的休闲室，因为在旁边有一台咖啡机
+        		<br />好吃、好喝、好学习</p>
+        		<div class="sapce"></div>
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="filter text-center">
+        					<ul class="nav nav-pills">
+							  <li class="active"><a href="#" data-filter="*">所有</a></li>
+							  <li><a href="#" data-filter=".web-design">网页设计</a></li>
+							  <li><a href="#" data-filter=".app-develop">应用开发</a></li>
+							  <li><a href="#" data-filter=".site-build">站点构建</a></li>
+							</ul>
+        				</div>
+        				<div class="space"></div>
+        				<div class="isotope-container row">
+        					<div class="col-sm-6 col-md-3 web-design" >
+        						<div>
+        							<div class="overlay-container ">
+        								<img width="100%" height="190px" src="img/sm1.jpg"/>
+        								<a href="" class="overlay" data-toggle="modal" data-target="#project-1">
+        									<i class="fa fa-search-plus"></i>
+        									<span>网页设计</span>
+        								</a>
+        							</div>
+
+        							<a href="#" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">网页设计</a>
+        						</div>
+        						<div>
+									<div class="modal fade" tabindex="-1" role="dialog" id="project-1">
+									  <div class="modal-dialog modal-lg" role="document">
+									    <div class="modal-content" >
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title">网页设计</h4>
+									      </div>
+									      <div class="modal-body">
+									        <h3>课程简介</h3>
+									        <div class="row">
+									        	<div class="col-md-6">
+									        		<p>网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作。作为企业对外宣传物料的其中一种，精美的网页设计，对于提升企业的互联网品牌形象至关重要。
+网页设计一般分为三种大类：功能型网页设计（服务网站&B/S软件用户端）、形象型网页设计（品牌形象站）、信息型网页设计（门户站）。设计网页的目的不同，应选择不同的网页策划与设计方案。
+网页设计的工作目标，是通过使用更合理的颜色、字体、图片、样式进行页面设计美化，在功能限定的情况下，尽可能给予用户完美的视觉体验。高级的网页设计甚至会考虑到通过声光、交互等来实现更好的视听感受。
+网页设计主要以Adobe产品为主，常见的工具包括FW、PS、FL、DW、CDR、AI等，其中DW是代码工具，其他是图形图像和FL动画工具。还有最近几年Adobe新出的EdgeReflow、EdgeCode、Muse。</p>
+									        	</div>
+									        	<div class="col-md-6">
+									        		<img src="img/sm1.jpg" alt="" width="100%" height="100%" />
+									        	</div>
+									        </div>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+        						</div>
+        					</div>
+        					<div class="col-sm-6 col-md-3 app-develop" >
+        						<div>
+        							<div class="overlay-container">
+        								<img width="100%" height="190px" src="img/sm2.jpg"/>
+        								<a href="" class="overlay" data-toggle="modal" data-target="#project-2">
+        									<i class="fa fa-search-plus"></i>
+        									<span>应用开发</span>
+        								</a>
+        							</div>
+
+        							<a href="#" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">应用开发</a>
+        						</div>
+        						<div>
+									<div class="modal fade" tabindex="-1" role="dialog" id="project-2">
+									  <div class="modal-dialog modal-lg" role="document">
+									    <div class="modal-content" >
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title">应用开发</h4>
+									      </div>
+									      <div class="modal-body">
+									        <h3>课程简介</h3>
+									        <div class="row">
+									        	<div class="col-md-6">
+									        		<p>应用软件开发是指使用程序语言C#、 java 、 c++、vb等高级语言编写，主要是用于商业、生活应用的软件的开发。
+应用软件它可以拓宽计算机系统的应用领域，放大硬件的功能。其开发应用软件是为满足用户不同领域、不同问题的应用需求而提供的那部分软件。
+JAVA方向:
+计算机软件基础、数据库原理、SQLserver、C++程序设计、java核心编程、linux、websphere 开发工具、DB2数据库高级管理、DB2数据库应用开发、ERWin数据库建模、UML、ratioanlrose建模、OM软件开发生命周期、J2EEOM企业级开发、基于MVC的struts框架技术、软件测试工具与方法、项目管理基础等。</p>
+									        	</div>
+									        	<div class="col-md-6">
+									        		<img src="img/sm2.jpg" alt="" width="100%" height="100%" />
+									        	</div>
+									        </div>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+        						</div>
+        					</div>
+        					<div class="col-sm-6 col-md-3 site-build" >
+        						<div>
+        							<div class="overlay-container">
+        								<img width="100%" height="190px" src="img/sm3.jpg"/>
+        								<a href="" class="overlay"  data-toggle="modal" data-target="#project-3">
+        									<i class="fa fa-search-plus"></i>
+        									<span>站点构建</span>
+        								</a>
+        							</div>
+
+        							<a href="#" class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">站点构建</a>
+        						</div>
+        						<div>
+									<div class="modal fade" tabindex="-1" role="dialog" id="project-3">
+									  <div class="modal-dialog modal-lg" role="document">
+									    <div class="modal-content" >
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title">站点构建</h4>
+									      </div>
+									      <div class="modal-body">
+									        <h3>课程简介</h3>
+									        <div class="row">
+									        	<div class="col-md-6">
+									        		<p>网站即网络站点的简称。是指在因特网上，根据一定的规则，使用HTML等工具制作的用于展示特定内容的相关网页的集合。简单地说，网站是一种通讯工具，就像布告栏一样，人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务。</p>
+									        		<p>网站即网络站点的简称。是指在因特网上，根据一定的规则，使用HTML等工具制作的用于展示特定内容的相关网页的集合。简单地说，网站是一种通讯工具，就像布告栏一样，人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务。</p>
+
+									        	</div>
+									        	<div class="col-md-6">
+									        		<img src="img/sm3.jpg" alt="" width="100%" height="100%" />
+									        	</div>
+									        </div>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+        						</div>
+        					</div>
+        					<div class="col-sm-6 col-md-3 web-design" >
+        						<div>
+        							<div class="overlay-container">
+        								<img width="100%" height="190px" src="img/sm4.jpg"/>
+        								<a href="" class="overlay"  data-toggle="modal" data-target="#project-4">
+        									<i class="fa fa-search-plus"></i>
+        									<span>网页设计（二）</span>
+        								</a>
+        							</div>
+
+        							<a href="#" class="btn btn-default btn-block">网页设计（二）</a>
+        						</div>
+        						<div>
+									<div class="modal fade" tabindex="-1" role="dialog" id="project-4">
+									  <div class="modal-dialog modal-lg" role="document">
+									    <div class="modal-content" >
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title">网页设计（二）</h4>
+									      </div>
+									      <div class="modal-body">
+									        <h3>课程简介</h3>
+									        <div class="row">
+									        	<div class="col-md-6">
+									        		<p>网页设计（web design，又称为Web UI design，WUI design，WUI），是根据企业希望向浏览者传递的信息（包括产品、服务、理念、文化），进行网站功能策划，然后进行的页面设计美化工作。作为企业对外宣传物料的其中一种，精美的网页设计，对于提升企业的互联网品牌形象至关重要。
+网页设计一般分为三种大类：功能型网页设计（服务网站&B/S软件用户端）、形象型网页设计（品牌形象站）、信息型网页设计（门户站）。设计网页的目的不同，应选择不同的网页策划与设计方案。
+网页设计的工作目标，是通过使用更合理的颜色、字体、图片、样式进行页面设计美化，在功能限定的情况下，尽可能给予用户完美的视觉体验。高级的网页设计甚至会考虑到通过声光、交互等来实现更好的视听感受。
+网页设计主要以Adobe产品为主，常见的工具包括FW、PS、FL、DW、CDR、AI等，其中DW是代码工具，其他是图形图像和FL动画工具。还有最近几年Adobe新出的EdgeReflow、EdgeCode、Muse。</p>
+									        	</div>
+									        	<div class="col-md-6">
+									        		<img src="img/sm4.jpg" alt="" width="100%" height="100%" />
+									        	</div>
+									        </div>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+   		<section id="authentication" class="">
+   			<div class="container">
+   				<div class="space"></div>
+   				<div class="space"></div>
+   				<h1 class="text-center">慕课网认证</h1>
+   				<!--<div class="space"></div>-->
+   				<div class="space"></div>
+   				<div class="row">
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   				</div>
+   				<div class="space"></div>
+   				<div class="row">
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   					<div class="col-md-4">
+   						<div class="media">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="img/认证.png" alt="...">
+						    </a>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">Oracle 认证</h4>
+							    <blockquote>
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+						  </div>
+						</div>
+   					</div>
+   				</div>
+   			</div>
+	   			<section id="ad">
+	   			<div class="container">
+	   				<div class="row">
+	   					<div class="col-xs-2">
+	   						<img src="img/苹果.png" alt="" class="img-responsive" />
+	   					</div>
+	   					<div class="col-xs-2">
+	   						<img src="img/安卓.png" alt="" class="img-responsive"/>
+	   					</div>
+	   					<div class="col-xs-2">
+	   						<img src="img/腾讯.png" alt="" class="img-responsive"/>
+	   					</div>
+	   					<div class="col-xs-2">
+	   						<img src="img/苹果.png" alt="" class="img-responsive"/>
+	   					</div>
+	   					<div class="col-xs-2">
+	   						<img src="img/安卓.png" alt="" class="img-responsive"/>
+	   					</div>
+	   					<div class="col-xs-2">
+	   						<img src="img/腾讯.png" alt="" class="img-responsive"/>
+	   					</div>
+	   				</div>
+	   			</div>
+	   		</section>
+   		</section>
+   		<section id="contact" class="contact">
+   			<div class="container">
+   				<div class="space"></div>
+   				<div class="space"></div>
+   				<h1 class="text-center">联系我们</h1>
+   				<div class="space"></div>
+   				<div class="row">
+   					<div class="col-md-6">
+   						<p>
+   							慕课培训机构中心位于广东省湛江市赤坎区寸金路29号岭南师范学院，是华为、Oracle、小红帽、思科认证、VUE和授权的培训合作伙伴和考试中心、专注培养社会急需的信息化人才。
+   							慕课培训机构中心位于广东省湛江市赤坎区寸金路29号岭南师范学院，是华为、Oracle、小红帽、思科认证、VUE和授权的培训合作伙伴和考试中心、专注培养社会急需的信息化人才。
+   						</p>
+   						<ul class="list-icons">
+   							<li><i class="fa fa-map-marker pr-10"></i>广东省湛江市赤坎区寸金路29号岭南师范学院</li>
+   							<li><i class="fa fa-phone pr-10"></i>400-100-100</li>
+   							<li><i class="fa fa-fax pr-10"></i>15016488888</li>
+   							<li><i class="fa fa-envelope pr-10"></i>946017153@qq.com</li>
+   						</ul>
+   						<ul class="links clearfix">
+   							<a href="#"><li class="faceboo"><i class="fa fa-facebook"></i></li></a>
+   							<a href="#"><li class="twitter"><i class="fa fa-twitter"></i></li></a>
+   							<a href="#"><li class="googleplus"><i class="fa fa-google-plus"></i></li></a>
+   							<a href="#"><li class="skype"><i class="fa fa-skype"></i></li></a>
+   							<!--<a href="#"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a>-->
+   							<!--<a href="#"><li class="youtube"><i class="fa fa-youtube"></i></li></a>-->
+   							<a href="#"><li class="flickr"><i class="fa fa-flickr"></i></li></a>
+   							<a href="#"><li class="pinterest"><i class="fa fa-pinterest"></i></li></a>
+   						</ul>
+   					</div>
+   					<div class="col-md-6">
+   						<form action="" method="post">
+   							<div class="form-group has-feedback">
+							  <label class="control-label sr-only" for="Name">Name</label>
+							  <input type="text" class="form-control" placeholder="Name" id="Name">
+							  <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
+							</div>
+
+							<div class="form-group has-feedback">
+							  <label class="control-label sr-only" for="Email">Email</label>
+							  <input type="text" class="form-control" placeholder="Enter email" id="Email">
+							  <span class="fa fa-envelope-o form-control-feedback" aria-hidden="true"></span>
+							</div>
+
+							<div class="form-group has-feedback">
+							  <label class="control-label sr-only" >Message</label>
+							  <textarea class="form-control" placeholder="Message" rows="8"></textarea>
+							  <span class="fa fa-pencil form-control-feedback" aria-hidden="true"></span>
+							</div>
+
+							<input type="text" class="btn btn-default" value="Send" />
+   						</form>
+   					</div>
+   				</div>
+   			</div>
+   		</section>
+   		<footer>
+   			<div class="container">
+   				<div class="row">
+   					<div class="col-md-12">
+   						<p class="text-center">
+   							Copyright © 2018 Shaw by Muke.
+   						</p>
+   					</div>
+   				</div>
+   			</div>
+   		</footer>
+        <!--确保所有浏览器都能使用html5元素-->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <!--首先，通过CDN引入jquery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!--然后，判断jquery文件是否存在，因为CDN有可能挂了，如果jquery对象不存在，导入当前文件夹的jquery-->
+        <script>
+        	window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+        </script>
+        <!--console.log兼容在IE浏览器中-->
+        <script src="js/plugins.js"></script>
+        <!--jQuery3.2.1-->
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!--bootstrap脚本-->
+        <script src="js/bootstrap.min.js"></script>
+		<!--过滤插件脚本-->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!--背景图片脚本-->
+		<script src="js/jquery.backstretch.js"></script>
+		 <!--当前项目的脚本-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
